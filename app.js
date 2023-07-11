@@ -19,6 +19,6 @@ app.use(require("./routes/index"));
 app.use(require("./routes/todo"));
 
 // server configuration
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('Started Listening on port 3000');
 });
